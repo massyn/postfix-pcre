@@ -1,16 +1,14 @@
+# Reject any email that appears to have blank senders or receivers
 /To:.*<>/           REJECT
 /From:.*<>/         REJECT
-/From:.*<.*@massyn.co.za>/      REJECT
 # rolex or cartier
 /^Subject:(.*)([rR][-\. ]?[oO0][-\. ]?[lL][-\. ]?[eE][-\. ]?[xX][\.? ]?)|([cC][-\. ]?[aA4][-\. ]?[rR][-\. ]?[tT][-\. ]?[iI\|1][-\. ]?[eE][-\. ]?[rR][\.? ]?)/ REJECT Message header rejected [065x]
 # viagra
-# Looks simular to my body_checks entry, with just '^Subject:.*' prefixing the string.
 /^Subject:.*(VP[-]?RX|[vV][ j_\-]?[iI1][ j_\-]?[aA4@][ j_\-]?[gG][ j_\-]?[rR][ j_\-]?[aA4@])/ REJECT Message header rejected [073]
 # Block non-english text
 /^Content-Type:.*charset=.*(big5|euc-kr|gb2312|iso-.*-jp|ks_c_5601-1987)/ REJECT Message header rejected [066]
 /^Subject:.*=\?(big5|euc-kr|gb2312|iso-.*-jp|ks_c_5601-1987)\?/ REJECT Message header rejected [067]
 /^Subject:.*=?KOI8/ REJECT Message header rejected [060]
-
 # Block mail with really old dates
 /^Date:.*200[0-7]/ REJECT Message header rejected [058] - Date too old!
 /^Date:.*19[0-9][0-9]/ REJECT Message header rejected [059] - Date too old!
