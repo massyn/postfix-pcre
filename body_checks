@@ -1,5 +1,6 @@
 /free mortgage quote/     REJECT
 /repair your credit/      REJECT
+/I pray this mail finds you/  REJECT
 /I have some unpleasant news for you/   REJECT
 # viagra
 /(VP[\-]RX|[vV][ j!\-\.]?[iI1][ j!\-\.]?[aA4@][ !j\-\.]?[gG][ !j\-\.]?[rR][ !j\-\.]?[aA4][ !j\-\.]?)/ REJECT Message body rejected [301]
