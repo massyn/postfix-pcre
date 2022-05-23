@@ -7,24 +7,18 @@
 /(VP[\-]RX|[vV][ j!\-\.]?[iI1][ j!\-\.]?[aA4@][ !j\-\.]?[gG][ !j\-\.]?[rR][ !j\-\.]?[aA4][ !j\-\.]?)/ REJECT Message body rejected [301]
 # valium
 /[vV][ j!\-\.]?[aAA4@][ j!\-\.]?[lL|1][ j!\-\.]?[iI\|1][ j!\-\.]?[uU][ j!\-\.]?[mM][ j!\-\.]?/ REJECT Message body rejected [401]
-
 # levitra
 /[lL\|1][ j!\-\.]?[eE][ j!\-\.]?[vV][ j!\-\.]?[iI\|1][ j!\-\.]?[tT][ j!\-\.]?[rR][ j!\-\.]?[aA][ j!\-\.]?/ REJECT Message body rejected [303]
-
 # ciallis
 /[cC][ j!\-\.]?[iI\|1][ j!\-\.]?[aA4@][ j!\-\.]?[aA]?[lL\|1]*[ j!\-\.]?[iI\|1][ j!\-\.]?[sS5][ j!\-\.]/ REJECT Message body rejected [304]
-
 # MaxGain+
 /[mM][-\. ]?[aA4][-\. ]?[xX][-\. ]?[gG][-\. ]?[aA4][-\. ]?[iI1][-\. ]?[nN][+]?[!\.\? ]?/ REJECT Message body rejected [210]
-
 # Replica goods - watches, shoes.
 /[wW]atch(es)? [rR]eplica[!\.,\?s ]?/ REJECT Message body rejected [013]
 /[rR]eplica(s)? [wW]atch(es)?|[lL]eather|[sS]hoes|[bB]oots|[fF]ootwear[\.\? ]?/ REJECT Message body rejected [049]
 /([pP]opular|[eE]xquisit[e])? [rR]eplica(s)?[\.\? ]?/ REJECT Message body rejected [055]
 /[lL]ux(ury|urious|)[\., ]? ([lL]eather|[sS]hoes|[bB]oots|[fF]ootwear)[!\.\? ]/ REJECT Message body rejected [043]
-
 # rolex or cartier
 /([rR][-\. ]?[oO0][-\. ]?[lL][-\. ]?[eE][-\. ]?[xX][\.\? ]?)|([cC][-\. ]?[aA4][-\. ]?[rR][-\. ]?[tT][-\. ]?[iI1][-\. ]?[eE][-\. ]?[rR][\.\? ]?)/ REJECT Message body rejected [101]
-
 # Here is one that is doing the rounds. The vertical pipe symbol acts as an OR. The words and whitespace are inside brackets, with a question mark afterwards. This means match either word 1 or 0 times. Meaning either word may, or may not be in the string. Useful!
 /[cC]aught( |you|me)?naked[\.\? ]?/ REJECT Message body rejected [038]
