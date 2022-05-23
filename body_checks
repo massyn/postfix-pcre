@@ -2,6 +2,7 @@
 /repair your credit/      REJECT
 /I pray this mail finds you/  REJECT
 /I have some unpleasant news for you/   REJECT
+/One of your credentials was compromised/ REJECT
 # viagra
 /(VP[\-]RX|[vV][ j!\-\.]?[iI1][ j!\-\.]?[aA4@][ !j\-\.]?[gG][ !j\-\.]?[rR][ !j\-\.]?[aA4][ !j\-\.]?)/ REJECT Message body rejected [301]
 # valium
